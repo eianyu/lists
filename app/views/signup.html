@@ -1,0 +1,27 @@
+<div class="row padding-top">
+  <div class="twelve columns">
+    <input class="u-full-width center" type="text" placeholder="Name" ng-model="data.name" required>
+   </div>
+</div>
+<div class="row center-block">
+  <div class="twelve columns">
+    <input class="u-full-width center" type="email" placeholder="Email" ng-model="data.email" required>
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve colums center-text">
+    <p> How often would you like to get emails from us? </p>
+    <input id="weekly" type="radio" name="emailFrequency" value="1" ng-model="data.frequency" checked>
+    <span class="label-body option-name">Weekly</span>
+    <input id="biweekly" type="radio" name="emailFrequency" value="2" ng-model="data.frequency">
+    <span class="label-body option-name">Bi-Weekly</span>
+  </div>
+</div>
+
+<div class="row padding-top">
+  <div class="twelve columns center-text">
+    <a href="/"> go back </a>
+    <a href="lists" class="button" > Next </a>
+  </div>
+</div>

@@ -1,0 +1,172 @@
+// bower:scss
+// endbower
+
+
+// Styles by Paul Dariye
+
+// Variables
+$eiacolor: #6f5397;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+a, a:hover, a:focus {
+  color: $eiacolor;
+  text-decoration: none;
+}
+
+.fullpage {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.eia-logo > img {
+  height: 170px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-padding {
+  padding-top: 10rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.padding-top {
+  padding-top: 45px;
+}
+
+.form-column {
+  // max-width: 21.875rem;
+  min-width: 13rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.form-column input[type="checkbox"] {
+  cursor: pointer;
+  margin-right: 0.875rem;
+  position: relative;
+  z-index: 100;
+}
+
+input[type="text"], input[type="email"] {
+  display: block;
+  margin: auto 5px 5px auto;
+  padding: 5px;
+}
+
+.form-column input[type="checkbox"]:checked:before, .form-column input[type="radio"]:checked:before {
+  content: '';
+  -webkit-transition: all 0.1s ease-in-out;
+  -mox-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  display: inline-block;
+  width: 1.375rem;
+  height: 1.375rem;
+  background: $eiacolor;
+  border-radius: 0.1875rem;
+  position: relative;
+  bottom: 0.3rem;
+  right: 0.15rem;
+}
+
+.form-column input[type="checkbox"]:checked + label, .form-column input[type="radio"]:checked + label {
+  background: $eiacolor;
+}
+
+.form-column input[type="checkbox"]:checked:after, .form-column input[type="radio"]:checked:after {
+  visibility: visibile;
+  content: '/';
+  font-family: 'iconic';
+  color: #fff;
+  position: absolute;
+  top: -0.1rem;
+  left: 0.1rem;
+  font-size: 0.85rem;
+  -webkit-animation: checkFadeIn 0.2s;
+  -moz-animation: checkFadeIn 0.2s;
+  -o-animation: checkFadeIn 0.2s;
+  animation: checkFadeIn 0.2s;
+}
+
+.form-column .option span {
+  cursor: default;
+}
+
+.options-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; 
+}
+
+.option {
+  position: relative;
+  display: block;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.625rem;
+  text-align: left;
+  list-style-type: none;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: tranparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  display: inline-block;
+  width: 80%;
+}
+
+.form-column .option-name {
+  position: absolute;
+  top: -0.07rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.687rem 2.375rem;
+  border-radius: 0.3125rem;
+  background: #f6f6f6;
+  -webkit-transition: all 0.1s ease-in-out;
+  -mox-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.button:hover, .button:focus, input[type="submit"]:hover, input[type="submit"]:focus, input[type="button"]:hover, input[type="button"]:focus {
+  border: 1px solid $eiacolor;
+}
+
+.button.button-primary, input[type="submit"].button-primary, input[type="button"].button-primary {
+  background-color: $eiacolor;
+  border-color: $eiacolor;
+}
+.button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="button"].button-primary:hover {
+  background-color: lighten($eiacolor, 10%);
+  border-color: lighten($eiacolor, 10%);
+}
+@media (max-width: 551px) {
+  body {
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
